@@ -1,0 +1,5 @@
+prints="select * from book"
+add="insert into book(title,available,user) values (%s,%s,%s)"
+borrow="update book set available=%s,user=%s where title=%s and available=%s"
+delete="delete from book where title=%s"
+returns="UPDATE book SET available=%s, user=%s WHERE title=%s"
